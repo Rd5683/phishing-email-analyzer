@@ -1,8 +1,11 @@
+
 import os
 from datetime import datetime
 
+
 def generate_report(findings, email_file):
     total_weight = sum(item["weight"] for item in findings)
+    total_findings = len(findings)
 
     if total_weight >= 4:
         verdict = "LIKELY PHISHING"
@@ -20,7 +23,8 @@ def generate_report(findings, email_file):
     lines.append("Scan time: " + datetime.now().strftime("%Y-%m-%d %H:%M:%S"))
     lines.append("Verdict: " + verdict)
     lines.append("Overall Severity: " + overall_severity)
-    lines.append("Total red flags: " + str(len(findings)))
+    lines.append("Weighted risk score: " + str(total_weight))
+    lines.append("Total findings: " + str(total_findings))
     lines.append("=" * 50)
 
     for item in findings:
@@ -30,10 +34,12 @@ def generate_report(findings, email_file):
 
     print(report_text)
 
-    email_name = os.path.basename(email_file).replace(".eml", "")
-    report_path = "reports/" + email_name + "_report.txt"
+    email_name = os.path.splitext(os.path.basename(email_file))[0]
+    report_path = os.path.join("reports", email_name + "_report.txt")
 
-    with open(report_path, "w") as f:
+    os.makedirs("reports", exist_ok=True)
+
+    with open(report_path, "w", encoding="utf-8") as f:
         f.write(report_text)
 
     print("\nReport saved to:", report_path)
