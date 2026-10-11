@@ -1,0 +1,11 @@
+==================================================
+Email analyzed: samples/phishing_sample3_bypass.eml
+Scan time: 2026-10-11 13:02:09
+Verdict: LIKELY PHISHING
+Overall Severity: High
+Total red flags: 4
+==================================================
+- Urgency Language: Found urgency phrase: 'verify your account'
+- Urgency Language: Found urgency phrase: 'click here'
+- Sender Domain: Email mentions 'paypal' but actual sending domain is 'paypal.com.attacker-evil.com', not paypal.com (full address: PayPal Security <support@paypal.com.attacker-evil.com>)
+- Suspicious Link: Suspicious link found: https://example.com/verify

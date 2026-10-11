@@ -1,0 +1,17 @@
+==================================================
+Email analyzed: samples/phishing_sample1.eml
+Scan time: 2026-10-11 13:02:08
+Verdict: LIKELY PHISHING
+Overall Severity: High
+Total red flags: 10
+==================================================
+- Urgency Language: Found urgency phrase: 'urgent'
+- Urgency Language: Found urgency phrase: 'immediately'
+- Urgency Language: Found urgency phrase: 'act now'
+- Urgency Language: Found urgency phrase: 'suspended'
+- Urgency Language: Found urgency phrase: 'verify your account'
+- Urgency Language: Found urgency phrase: '24 hours'
+- Urgency Language: Found urgency phrase: 'failure to act'
+- Urgency Language: Found urgency phrase: 'click here'
+- Sender Domain: Email mentions 'paypal' but actual sending domain is 'paypa1-verify.com', not paypal.com (full address: PayPal Security <security@paypa1-verify.com>)
+- Suspicious Link: Suspicious link found: https://paypal-account-verify.ru/login

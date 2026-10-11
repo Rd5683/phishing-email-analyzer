@@ -1,0 +1,8 @@
+==================================================
+Email analyzed: samples/phishing_sample4_replyto.eml
+Scan time: 2026-10-11 13:02:09
+Verdict: SUSPICIOUS - Review Needed
+Overall Severity: Medium
+Total red flags: 1
+==================================================
+- Reply-To Mismatch: Email claims to be from 'amazon.com' but replies would go to a different domain: 'freemail-xyz.ru'

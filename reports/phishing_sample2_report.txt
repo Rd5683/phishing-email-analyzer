@@ -1,0 +1,16 @@
+==================================================
+Email analyzed: samples/phishing_sample2.eml
+Scan time: 2026-10-11 13:02:08
+Verdict: LIKELY PHISHING
+Overall Severity: High
+Total red flags: 9
+==================================================
+- Urgency Language: Found urgency phrase: 'urgent'
+- Urgency Language: Found urgency phrase: 'immediately'
+- Urgency Language: Found urgency phrase: 'act now'
+- Urgency Language: Found urgency phrase: 'suspended'
+- Urgency Language: Found urgency phrase: '24 hours'
+- Urgency Language: Found urgency phrase: 'failure to act'
+- Urgency Language: Found urgency phrase: 'click here'
+- Sender Domain: Email mentions 'sbi' but actual sending domain is 'sbi-kyc-update.in', not sbi.co.in (full address: SBI Bank Alert <alert@sbi-kyc-update.in>)
+- Suspicious Link: Suspicious link found: https://sbi-kyc-verify-secure.ru/login

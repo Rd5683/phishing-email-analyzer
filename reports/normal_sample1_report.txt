@@ -1,0 +1,7 @@
+==================================================
+Email analyzed: samples/normal_sample1.eml
+Scan time: 2026-10-11 13:03:30
+Verdict: NO PHISHING INDICATORS DETECTED
+Overall Severity: Low
+Total red flags: 0
+==================================================
